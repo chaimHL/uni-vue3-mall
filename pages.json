@@ -1,0 +1,17 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "购物街"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "购物街",
+		"navigationBarBackgroundColor": "#ff5777",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}
