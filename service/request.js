@@ -1,5 +1,6 @@
 const TIME_OUT = 100000
-const BASE_URL = 'https://mock.apifox.cn/m1/2917397-0-default'
+// const BASE_URL = 'https://mock.apifox.cn/m1/2917397-0-default'
+const BASE_URL = 'http://123.207.32.32:7888/api/hy66'
 
 class QYRequest {
 	request(reqPayload) {

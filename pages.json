@@ -5,6 +5,14 @@
 			"style": {
 				"navigationBarTitleText": "购物街"
 			}
+		},
+		{
+			"path" : "pages/webview/webview",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false
+			}
 		}
 	],
 	"globalStyle": {
