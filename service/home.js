@@ -5,5 +5,11 @@ export default {
 		return qyRequest.request({
 			url: '/home/multidata'
 		})
+	},
+	getData(data) {
+		return qyRequest.request({
+			url: '/home/data',
+			data
+		})
 	}
 }
