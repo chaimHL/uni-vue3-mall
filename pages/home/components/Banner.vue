@@ -6,12 +6,7 @@
 			@click="handleClickBanner(item)"
 		>
 			<view class="swiper-item">
-				<image
-					:src="item.image"
-					:lazy-load="true"
-					mode="widthFix"
-					class="img"
-				></image>
+				<image :src="item.image" mode="widthFix" class="img"></image>
 			</view>
 		</swiper-item>
 	</swiper>

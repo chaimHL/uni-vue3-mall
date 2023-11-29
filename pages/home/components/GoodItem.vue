@@ -1,6 +1,16 @@
 <template>
 	<view class="item">
-		<image class="img" :src="good.show.img" mode="widthFix"></image>
+		<!-- #ifdef H5 -->
+		<img class="img" v-lazy="good.show.img" />
+		<!-- #endif -->
+		<!-- #ifndef H5 -->
+		<image
+			class="img"
+			:src="good.show.img"
+			:lazy-load="true"
+			mode="widthFix"
+		></image>
+		<!-- #endif -->
 	</view>
 </template>
 
