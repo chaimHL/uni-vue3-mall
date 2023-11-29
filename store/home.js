@@ -22,6 +22,7 @@ export const useHomeStore = defineStore('home', {
 		return {
 			banners: [],
 			recommends: [],
+			currentType: goodsType[0], // 当前激活的 tab
 			goodsData: getDefaultGoodsData()
 		}
 	},
@@ -32,9 +33,13 @@ export const useHomeStore = defineStore('home', {
 			this.recommends = res?.data?.recommend?.list || []
 		},
 
+		setCurrentType(type) {
+			this.currentType = type
+		},
+
 		async fetchHomeData(data) {
 			const res = await homeApi.getData(data)
-			this.goodsData[data.type].list.push(res.data.list)
+			this.goodsData[data.type].list.push(...res.data.list)
 			this.goodsData[data.type].page = res.data.page
 		}
 	}

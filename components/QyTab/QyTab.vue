@@ -24,8 +24,10 @@ defineProps({
 })
 
 const activeIndex = ref(0)
+const emits = defineEmits(['clickTab'])
 function handleClickItem(index) {
 	activeIndex.value = index
+	emits('clickTab', index)
 }
 </script>
 

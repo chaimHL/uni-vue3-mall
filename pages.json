@@ -3,15 +3,15 @@
 		{
 			"path": "pages/home/home",
 			"style": {
-				"navigationBarTitleText": "购物街"
+				"navigationBarTitleText": "购物街",
+				"onReachBottomDistance": 300
 			}
 		},
 		{
-			"path" : "pages/webview/webview",
-			"style" : 
-			{
-				"navigationBarTitleText" : "",
-				"enablePullDownRefresh" : false
+			"path": "pages/webview/webview",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
 			}
 		}
 	],
