@@ -1,5 +1,5 @@
 <template>
-	<view class="item">
+	<view class="item" @click="handleClickItem">
 		<!-- #ifdef H5 -->
 		<img class="img" v-lazy="good.show.img" />
 		<!-- #endif -->
@@ -21,6 +21,12 @@ defineProps({
 		default: () => ({})
 	}
 })
+
+function handleClickItem() {
+	uni.navigateTo({
+		url: '/pages/detail/detail'
+	})
+}
 </script>
 
 <style lang="scss">
